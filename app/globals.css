@@ -101,3 +101,6 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+.gradient1 {
+  background: linear-gradient(90deg, #43086e 0%,#dc91cb 100%)
+}

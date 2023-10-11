@@ -21,14 +21,14 @@ export default function NewCarousel() {
             <Carousel
                 dragging
                 withoutControls
-                autoplay
+                // autoplay
                 autoplayInterval={4000}
                 className="w-full h-full"
                 wrapAround
-                defaultControlsConfig={{
-                    prevButtonText: prevButton,
-                    nextButtonText: nextButton
-                }}
+                // defaultControlsConfig={{
+                //     prevButtonText: prevButton,
+                //     nextButtonText: nextButton
+                // }}
             >
                 
                 <img src="/images/concert.avif" className="w-full h-screen object-cover" />
