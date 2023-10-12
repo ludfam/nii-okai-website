@@ -15,14 +15,14 @@ export default function Heading({ title, color, opacity }: HeadingProps) {
                     opacity: opacity && (opacity / 100)
                 }}
                 className={cn(
-                "montserrat text-9xl font-extrabold text-black/40 w-max",
+                "montserrat text-5xl lg:text-9xl font-extrabold text-black/40 w-max",
                 color === "white" ? "text-white/40" : "text-black/40",
                 opacity && ""
             )}>
                 {title}
             </p>
             <p className={cn(
-                "allexis absolute text-8xl translate-y-[50%] top-0 mx-auto",
+                "allexis absolute text-5xl lg:text-8xl translate-y-[50%] top-0 mx-auto",
                 color === "white" ? "text-white" : "text-black"
             )}>
                 {title}

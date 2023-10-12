@@ -46,19 +46,19 @@ export default function Home() {
       </section>
       <section className="min-h-screen flex flex-col py-12  w-full ">
         <div className="w-full flex flex-col gap-16 items-center justify-center container">
-          <p className="allexis text-8xl   mx-auto">
+          <p className="allexis text-5xl  md:text-8xl   mx-auto">
             Music
           </p>
           <div className="w-full  grid lg:grid-cols-2 gap-8 h-full">
-            <div className="flex items-center lg:translate-y-10 z-10 lg:justify-end max-lg:justify-center ">
-              <div className="aspect-square w-full p-4  h-[600px] drop-shadow-lg bg-[#7B019E]">
+            <div className="flex items-center lg:translate-y-10 z-10 justify-center ">
+              <div className="aspect-square w-full p-4  lg:h-[600px] drop-shadow-lg bg-[#7B019E]">
                 <div className="w-full h-full bg-black/50">
 
                 </div>
               </div>
             </div>
             <div className="flex flex-col justify-center gap-4">
-              <p className="uppercase  text-4xl md:text-5xl font-extrabold">
+              <p className="uppercase  text-3xl md:text-5xl font-extrabold">
                 Believe For It
               </p>
               <p className=" text-base md:text-lg font-bold italic">
@@ -102,9 +102,9 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="min-h-[50vh] py-8 flex flex-col gap-8 items-center bg-black text-white justify-center">
+      <section className="min-h-[50vh] px-8 py-8 flex flex-col gap-8 items-center bg-black text-white justify-center">
         <Heading title="Subscribe" opacity={30} color="white" />
-        <p className="text-lg">
+        <p className="mt-2 md:text-lg text-center">
           Sign up to receive the latest news from Nii Okai
         </p>
 
