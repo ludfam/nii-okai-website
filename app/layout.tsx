@@ -2,6 +2,7 @@ import { APP_NAME } from '@/lib/constants'
 import './globals.css'
 import type { Metadata } from 'next'
 import { Children } from '@/types'
+import { Toaster } from '@/components/ui/toaster'
 
 
 export const metadata: Metadata = {
@@ -13,7 +14,7 @@ export default function RootLayout({ children }: Children) {
   return (
     <html lang="en">
       <body className="">
-        
+        <Toaster />
         {children}
       </body>
     </html>

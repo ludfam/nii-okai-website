@@ -104,3 +104,7 @@ body {
 .gradient1 {
   background: linear-gradient(90deg, #43086e 0%,#dc91cb 100%)
 }
+
+.home-bg {
+  background-position: "right 45px bottom 20px";
+}
