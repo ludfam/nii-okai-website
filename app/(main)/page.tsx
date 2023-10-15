@@ -60,10 +60,10 @@ export default function Home() {
                     A Live Worship Experience
                   </p>
                   <div className="mb-4 flex flex-col gap-12">
-                    <p className=" font-light bg-gradient-to-b from-o-lightblue/80 tracking-widest to-white text-transparent bg-clip-text text-center font-serif text-6xl uppercase">
+                    <p className=" font-light bg-gradient-to-b from-o-lightblue/80 tracking-widest to-white text-transparent bg-clip-text text-center font-serif text-4xl md:text-6xl uppercase">
                         Moko Be
                     </p>
-                    <p className="allexis text-center text-5xl">
+                    <p className="allexis text-center text-3xl md:text-5xl">
                       Nii Okai
                     </p>
                  </div>
