@@ -1,7 +1,10 @@
 import NewCarousel from "@/components/carousel";
+import InstagramExcerpt from "@/components/excerpts/instagram-excerpt";
+import NewsExcerpt from "@/components/excerpts/news-excerpt";
 import NewsletterForm from "@/components/forms/newsletter-form";
 import Heading from "@/components/hierarchy/heading";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -14,28 +17,28 @@ export default function Home() {
           <Heading color="white" title="Book" />
           <div className="w-full grid lg:grid-cols-2 gap-8 h-full">
             <div className="flex items-center lg:justify-end max-lg:justify-center ">
-              <div className="aspect-[9/16] w-full md:w-[400px] h-[600px] drop-shadow-lg bg-white/60">
-
+              <div className=" relative aspect-[9/16] w-full md:w-[400px] h-[600px] drop-shadow-lg bg-white/60">
+                <Image src="/images/book_cover.jpeg" alt="book cover" fill />
               </div>
             </div>
             <div className="flex flex-col justify-center gap-4">
               <p className="uppercase text-white text-4xl md:text-5xl font-extrabold">
-                Believe For It
+                Yesu Hi
               </p>
               <p className="text-white text-base md:text-lg font-bold italic">
-                Passing on Faith to the Next Generation
+                Jesus is Good, Losing My Isaac
               </p>
               <p className="text-white">
-                From the best-selling female gospel artist of all time CeCe Winans comes a heartfelt guide full of spirit, music, and faith. CeCe&apos;s first book in over 10 years, Believe for It explores what it means to pass along wisdom and faith to generations to come.
-                <br />
-                Believe for It: Passing on Faith to the Next Generation beautifully recounts the pivotal experiences in CeCe&apos;s life that have shaped her faith. From her childhood in Detroit and the miracle of motherhood to her award-winning music career, CeCe brings readers along for a story full of heart, passion, and wisdom acquired from her walk with God.
+                In this very insightful and thought provoking piece, Nii Okai grants the reader unusual access to aspects of his personal life that reveals more of the man than the Minister that many have come to know.
+                <br /> <br />
+                The authenticity of a man&apos;s walk with God and how it reflects in the quality of his decisions goes a long way to determine his effectiveness and longevity in ministry. It therefore goes without saying that this book is a MUST read for anyone who desires to move from being an average miniter to one who is sold out for God.
               </p>
               <div className="flex flex-col gap-4 mt-4">
                 <Button variant="transparent-white" className="uppercase md:w-max" size="lg">
                   Buy Now
                 </Button>
 
-                <Button variant="purple" className="uppercase md:w-max" size="lg">
+                <Button className="uppercase md:w-max bg-o-yellow" size="lg">
                   Download the free book guide
                 </Button>
 
@@ -44,22 +47,35 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="min-h-screen flex flex-col py-12  w-full ">
+      <section className="min-h-[80vh] flex flex-col py-12  w-full ">
         <div className="w-full flex flex-col gap-16 items-center justify-center container">
           <p className="allexis text-5xl  md:text-8xl   mx-auto">
             Music
           </p>
           <div className="w-full  grid lg:grid-cols-2 gap-8 h-full">
             <div className="flex items-center lg:translate-y-10 z-10 justify-center ">
-              <div className="aspect-square w-full p-4  lg:h-[600px] drop-shadow-lg bg-[#7B019E]">
-                <div className="w-full h-full bg-black/50">
-
+              <div className="aspect-square w-full p-4 flex  justify-center  lg:h-[600px] drop-shadow-lg bg-o-lightblue">
+                <div className="absolute top-0 z-10 pt-4 w-full bg-gradient-to-b from-black/20 to-black/80 h-full flex flex-col items-center justify-between  text-white  py-10 ">
+                  <p className="uppercase font-sans tracking-widest mt-3 font-semibold text-sm">
+                    A Live Worship Experience
+                  </p>
+                  <div className="mb-4 flex flex-col gap-12">
+                    <p className=" font-light bg-gradient-to-b from-o-lightblue/80 tracking-widest to-white text-transparent bg-clip-text text-center font-serif text-6xl uppercase">
+                        Moko Be
+                    </p>
+                    <p className="allexis text-center text-5xl">
+                      Nii Okai
+                    </p>
+                 </div>
+                </div>
+                <div className=" relative w-full h-full bg-black/50">
+                  <Image src='/images/music.png' alt="music" fill className="object-cover grayscale" />
                 </div>
               </div>
             </div>
             <div className="flex flex-col justify-center gap-4">
               <p className="uppercase  text-3xl md:text-5xl font-extrabold">
-                Believe For It
+                Moko be
               </p>
               <p className=" text-base md:text-lg font-bold italic">
                 Passing on Faith to the Next Generation
@@ -73,7 +89,7 @@ export default function Home() {
                   Buy/Stream
                 </Button>
 
-                <Button variant="purple" className="uppercase md:w-max" size="lg">
+                <Button className="uppercase md:w-max bg-o-lightblue hover:bg-o-darkblue" size="lg">
                   BFI Challenge
                 </Button>
 
@@ -111,6 +127,9 @@ export default function Home() {
         <NewsletterForm />
 
       </section>
+      <NewsExcerpt />
+      <InstagramExcerpt />
+      
     </main>
   )
 }

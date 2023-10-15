@@ -1,7 +1,4 @@
 import { headerSocials } from "@/lib/data";
-import ActionTooltip from "../action-tooltip";
-import Link from "next/link";
-import { SOCIAL_ICON_MAP } from "@/lib/constants";
 import SocialIcon from "./social-icon";
 
 export default function SocialHeader() {

@@ -57,7 +57,7 @@ export default function NewsletterForm() {
                         </FormItem>
                     )}
                 />
-                <Button className=" w-full" variant="purple" type="submit">Submit</Button>
+                <Button className=" w-full bg-o-yellow"  type="submit">Submit</Button>
             </form>
         </Form>
     )
