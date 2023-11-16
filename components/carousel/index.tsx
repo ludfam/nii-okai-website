@@ -21,8 +21,8 @@ export default function NewCarousel() {
             <Carousel
                 dragging
                 withoutControls
-                // autoplay
-                autoplayInterval={4000}
+                autoplay
+                autoplayInterval={5000}
                 className="w-full h-full"
                 wrapAround
                 // defaultControlsConfig={{
@@ -31,9 +31,10 @@ export default function NewCarousel() {
                 // }}
             >
                 
-                <img src="/images/concert.avif" className="w-full h-screen object-cover" />
-                <img src="/images/concert.avif" className="w-full h-screen object-cover" />
-                <img src="/images/concert.avif" className="w-full h-screen object-cover" />
+                <img alt="" src="/images/home-hero.jpg" className="w-full h-[100vh] object-cover object-top" />
+                <img alt="" src="/images/home-hero-2.jpg" className="w-full h-[100vh] object-cover object-top" />
+                <img alt="" src="/images/home-hero-3.jpg" className="w-full h-[100vh] object-cover" />
+                {/* <img src="/images/concert.avif" className="w-full h-[85vh] object-cover" /> */}
 
             </Carousel>
         </>

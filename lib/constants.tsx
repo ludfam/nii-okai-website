@@ -15,3 +15,4 @@ export const SOCIAL_ICON_MAP: any = {
     twitter: FaTwitter,
     youtube: FaYoutube
 }
+

@@ -9,7 +9,7 @@ export default function NewsExcerpt() {
              <p className="allexis text-5xl  md:text-8xl   mx-auto">
             News
             </p>
-            <div className="container gap-4 mt-4 grid grid-cols-1 md:grid-cols-3">
+            <div className="container gap-8 mt-4 grid grid-cols-1 md:grid-cols-3">
                 {
                     dummyNews.slice(0,3).map((news) => (
                         <NewsCard key={news._id} data={news} />

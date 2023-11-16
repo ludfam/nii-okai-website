@@ -4,39 +4,39 @@ import { SOCIALS } from "./constants";
 export const headerSocials: HeaderSocial[] = [
     {
         label: "facebook",
-        link: "/"
+        link: "https://www.facebook.com/profile.php?id=100050588345055"
     },
     {
         label: "instagram",
-        link: "/"
+        link: "https://instagram.com/nii_okai?igshid=MTNiYzNiMzkwZA=="
     },
     {
         label: "twitter",
-        link: "/"
+        link: "https://x.com/ataaniiokai?s=21&t=1ceGW0tVrfl5Oni8uqn6Bg"
     },
     {
         label: "youtube",
-        link: "/"
+        link: "https://www.youtube.com/@NiiOkaiTV"
     },
 ]
 
 export const dummyNews: NewsPost[] = [
     {
         _id: "1",
-        title: "CECE WINANS ANNOUNCES THE FINAL DATES OF THE BELIEVE FOR IT FALL TOUR",
-        img: "/images/poster.jpg",
+        title: "NII OKAI ANNOUNCES THE FINAL DATES OF THE MOKOBE TOUR",
+        img: "/images/home-hero-3.jpg",
         link: "/",
     },
     {
         _id: "2",
-        title: "CECE WINANS ANNOUNCES THE FINAL DATES OF THE BELIEVE FOR IT FALL TOUR",
-        img: "/images/poster.jpg",
+        title: "NII OKAI ANNOUNCES THE FINAL DATES OF THE MOKOBE TOUR",
+        img: "/images/book_cover.jpeg",
         link: "/",
     },
     {
         _id: "3",
-        title: "CECE WINANS ANNOUNCES THE FINAL DATES OF THE BELIEVE FOR IT FALL TOUR",
-        img: "/images/poster.jpg",
+        title: "NII OKAI ANNOUNCES THE FINAL DATES OF THE MOKOBE TOUR",
+        img: "/images/home-music.jpg",
         link: "/",
     },
 ]
