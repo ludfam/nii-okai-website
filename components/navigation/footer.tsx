@@ -7,7 +7,7 @@ export default function Footer() {
             <div className="flex flex-col   w-full lg:flex-row items-center lg:justify-between gap-4 container">
                 <div className="flex flex-col lg:flex-row items-center gap-2 lg:gap-4 text-sm text-neutral-500">
                     <p>
-                        Copyright 2023
+                        Copyright @ 2023
                     </p>
                     <p>
                         Nii Okai
@@ -16,7 +16,7 @@ export default function Footer() {
                         All Rights Reserved
                     </p>
                     <p>
-                        Powered by <span className="text-white font-bold"> Ludfam Media</span> 
+                        Powered by <span className="text-white font-bold"> Ludfam Multimedia</span> 
                     </p>
                 </div>
                 <div className="flex items-center gap-4 ">

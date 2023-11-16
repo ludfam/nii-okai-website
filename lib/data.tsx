@@ -23,19 +23,19 @@ export const headerSocials: HeaderSocial[] = [
 export const dummyNews: NewsPost[] = [
     {
         _id: "1",
-        title: "NII OKAI ANNOUNCES THE FINAL DATES OF THE MOKOBE TOUR",
+        title: "NII OKAI PERFORMS AT MOKOBE @ 20",
         img: "/images/home-hero-3.jpg",
         link: "/",
     },
     {
         _id: "2",
-        title: "NII OKAI ANNOUNCES THE FINAL DATES OF THE MOKOBE TOUR",
+        title: "NII OKAI LAUNCHES A NEW BOOK",
         img: "/images/book_cover.jpeg",
         link: "/",
     },
     {
         _id: "3",
-        title: "NII OKAI ANNOUNCES THE FINAL DATES OF THE MOKOBE TOUR",
+        title: "NII OKAI LEADS A SPIRIT-FILLED WORSHIP",
         img: "/images/home-music.jpg",
         link: "/",
     },

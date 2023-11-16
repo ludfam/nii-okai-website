@@ -50,9 +50,9 @@ export default function Home() {
       <section className="min-h-[80vh] flex flex-col py-12  w-full ">
         <div className="w-full flex flex-col gap-16 items-center justify-center container">
           <Heading opacity={20} title="Music" />
-         
+
           <div className="w-full  grid lg:grid-cols-2 gap-8">
-          <div className="flex flex-col justify-center gap-4">
+            <div className="flex flex-col justify-center gap-4">
               <p className="uppercase  text-3xl md:text-5xl font-extrabold">
                 Moko be
               </p>
@@ -60,10 +60,9 @@ export default function Home() {
                 Passing on Faith to the Next Generation
               </p>
               <p className="font-light tracking-wide md:text-lg">
-                From the best-selling female gospel artist of all time CeCe Winans comes a heartfelt guide full of spirit, music, and faith. CeCe&apos;s first book in over 10 years, Believe for It explores what it means to pass along wisdom and faith to generations to come.
-                From the best-selling female gospel artist of all time CeCe Winans comes a heartfelt guide full of spirit, music, and faith. CeCe&apos;s first book in over 10 years, Believe for It explores what it means to pass along wisdom and faith to generations to come.
-                From the best-selling female gospel artist of all time CeCe Winans comes a heartfelt guide full of spirit, music, and faith. CeCe&apos;s first book in over 10 years, Believe for It explores what it means to pass along wisdom and faith to generations to come.
-
+                Nii Okai is the co-founder of &apos;Harbour City Mass Choir&apos; an inter-denominational music ministry based in Tema, Ghana with a clear purpose of impacting the youth through contemporary gospel music, school outreach programs, music ministry workshops as well as peer and social counseling.
+                <br />
+                Nii Okai has 5 albums to his credit. &apos;Moko Be&apos;, &apos;Hymnz Unlimited&apos;, &apos;Worshipful&apos;, &apos;Saving Hearts&apos; and &apos;Holy writings&apos; which he received an award with the &apos;Saving Hearts&apos; album at the 16th edition of Vodafone Ghana Music Awards for Music for Development Award.
               </p>
               <div className="flex flex-col gap-4 mt-4">
                 <Button variant="transparent-black" className="uppercase md:w-max" size="lg">
@@ -78,21 +77,21 @@ export default function Home() {
             </div>
             <div className="flex items-center  z-10 justify-center ">
               <div className="aspect-square w-full p-4 flex relative  justify-center  lg:h-[600px] drop-shadow-lg bg-[#305AA9]">
-             
+
                 <div className=" relative w-full h-full bg-black/50">
                   <Image src='/images/home-music-2.jpg' alt="music" fill className="object-cover object-[.55_.75] " />
                 </div>
               </div>
             </div>
-            
+
           </div>
         </div>
       </section>
       <section className="min-h-[70vh] 2xl:min-h-[60vh] overflow-hidden bg-cover " style={{
         backgroundImage: `url("/images/speaker.svg")`,
         backgroundRepeat: "no-repeat",
-        backgroundAttachment: "fixed",
-        // backgroundColor: "#1C1A18",
+        // backgroundAttachment: "fixed",
+        backgroundColor: "#1C1A18",
         // backgroundPosition: "right -200px bottom -200px"
       }} >
         <div className="w-full min-h-[70vh] 2xl:min-h-[50vh]  h-full relative  ">
@@ -108,7 +107,7 @@ export default function Home() {
 
             <Heading title="Speaker" color="white" />
             <p className="max-w-3xl md:text-lg mt-8 z-10">
-              Since 2012 CeCe has co-pastored Nashville Life Church in Nashville, TN with her husband Alvin. Though CeCe is most known and decorated for her music accolades, CeCe&apos;s passion for sharing The Gospel carries over in the form of written and spoken word. CeCe has spoken at conferences and events around the world.  In addition to her many live performances and guest hosting on national television (The Today Show, Good Morning America, Oprah), she has also made appearances on four different programs as an actress.
+              Nii Okai is currently the leader of &apos;&apos;Harbour City Mass Choir&apos;&apos; (H.C.M.C.), an inter-denominational music ministry based in Tema, Ghana. He came to limelight when he released his first album &apos;&apos;Moko Be&apos;&apos;. An 8-track music album produced by one of the great multi-talented instrumentalists in Ghana, KODA with its hit songs; &apos;&apos;Woana Na&apos;&apos; and &apos;&apos;Moko Be&apos;&apos;. The album featured &apos;&apos;Danny Nettey&apos;&apos;, &apos;&apos;Nana Yaa Amihere&apos;&apos; among others.
             </p>
             <Button variant="transparent-white" className="uppercase md:w-max" size="lg">
               Buy Now
@@ -127,7 +126,7 @@ export default function Home() {
       </section>
       <NewsExcerpt />
       <InstagramExcerpt />
-      
+
     </main>
   )
 }
