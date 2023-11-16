@@ -13,7 +13,7 @@ export default function SocialIcon({ label, link }: SocialIcon) {
     return (
         <>
             <ActionTooltip key={label} label={label}>
-                <Link href={link}>
+                <Link target="_blank" href={link}>
                     <Icon />
                 </Link>
             </ActionTooltip>
