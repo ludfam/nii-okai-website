@@ -40,3 +40,7 @@ export const dummyNews: NewsPost[] = [
         link: "/",
     },
 ]
+
+export const aboutStates: string[] = [
+    "15 Grammys", "27 Dove Awards", "16 STELLAR AWARDS", "BMI TRAILBLAZER", "WALK OF FAME"
+]
