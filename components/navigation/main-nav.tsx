@@ -26,10 +26,11 @@ import { usePathname } from "next/navigation"
 export default function MainNav() {
     const pathname = usePathname()
     const isActive = (href: string): boolean => {
-        return pathname === href || pathname.startsWith(href)
+
+        return pathname === href 
     }
     return (
-        <NavigationMenu className="hidden md:flex">
+        <NavigationMenu className="hidden md:flex ">
             <NavigationMenuList>
                 {
                     links.map((link) => (
