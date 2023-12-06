@@ -1,4 +1,3 @@
-import ReadMoreToggle from "@/components/core/read-mode-toggle";
 import HeadingAlt from "@/components/hierarchy/heading-alt";
 import { aboutStates } from "@/lib/data";
 import Image from "next/image";
@@ -10,7 +9,7 @@ export default function AboutPage() {
     return (
         <main className="min-h-screen border-t">
             <section className="flex flex-col gap-6  items-center justify-center py-10 container">
-                <h3 className=" text-3xl sm:text-4xl text-center font-extralight">
+                <h3 className=" text-3xl uppercase sm:text-4xl text-center font-extralight">
                     BEST SELLING GHANAIAN GOSPEL ARTIST OF ALL TIME
                 </h3>
                 <div className="flex items-center flex-wrap justify-between  gap-4 mx-auto max-w-[85%]  w-full text-center">
@@ -60,14 +59,12 @@ export default function AboutPage() {
                 </div>
             </section>
             <section className="min-h-[50vh] px-8 py-8 flex flex-col gap-8 items-center bg-black text-white justify-center">
-        <Heading title="Subscribe" opacity={30} color="white" />
-        <p className="mt-2 md:text-lg text-center">
-          Sign up to receive the latest news from Nii Okai
-        </p>
-
-        <NewsletterForm />
-
-      </section>
+                <Heading title="Subscribe" opacity={30} color="white" />
+                <p className="mt-2 md:text-lg text-center">
+                    Sign up to receive the latest news from Nii Okai
+                </p>
+                <NewsletterForm />
+            </section>
         </main>
     )
 }
