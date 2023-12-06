@@ -65,12 +65,10 @@ export default function Home() {
                 Nii Okai has 5 albums to his credit. &apos;Moko Be&apos;, &apos;Hymnz Unlimited&apos;, &apos;Worshipful&apos;, &apos;Saving Hearts&apos; and &apos;Holy writings&apos; which he received an award with the &apos;Saving Hearts&apos; album at the 16th edition of Vodafone Ghana Music Awards for Music for Development Award.
               </p>
               <div className="flex flex-col gap-4 mt-4">
-                <Button variant="transparent-black" className="uppercase md:w-max" size="lg">
-                  Buy/Stream
-                </Button>
+              
 
                 <Button className="uppercase md:w-max bg-o-lightblue hover:bg-o-darkblue" size="lg">
-                  BFI Challenge
+                  Buy / Stream
                 </Button>
 
               </div>
