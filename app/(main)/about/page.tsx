@@ -16,7 +16,7 @@ export default function AboutPage() {
                     {
                         aboutStates.map((stat, i) => (
                             <article className=" max-sm:text-xs font-extralight uppercase" key={i}>
-                                {stat}
+                                {/* {stat} */}
                             </article>
                         ))
                     }
@@ -27,9 +27,11 @@ export default function AboutPage() {
                     <Image fill src="/images/5.jpg" alt="" className="object-cover object-center" />
                 </div>
                 <div className="flex flex-col gap-4 justify- md:pt-12 mb-2">
-                    <HeadingAlt title="Career" opacity={20} />
+                    <HeadingAlt title="About" opacity={20} />
                     <p className="md:text-lg">
-                        Nii Okai is currently the leader of &apos;&apos;Harbour City Mass Choir&apos;&apos; (H.C.M.C.), an inter-denominational music ministry based in Tema, Ghana. He came to the limelight when he released his first album &apos;Moko Be&apos;. An 8-track music album produced by one of the great multi-talented instrumentalists in Ghana, KODA with its hit songs; &apos;Woana Na&apos; and &apos;Moko Be&apos;. The album featured &apos;Danny Nettey&apos;, &apos;Nana Yaa Amihere&apos; among others.
+
+                        Ernest Nii-Okai Okai, simply called Nii Okai (aka Ataa Nii) is a visionary leader, having founded Nii Okai Ministries, International House of Virtue (The iChurch), Saving Hearts Foundation, the Harbour City Mass Choir (co-founder) among others; including a founding leader of the Christian Music Association Ghana and convenor of the Hephzibah Summit.
+
                     </p>
                     <CareerMore />
                 </div>
@@ -46,9 +48,8 @@ export default function AboutPage() {
                         <div className="flex flex-col gap-4 justify-center md:pt-12 mb-2">
                             <HeadingAlt color="white" title="Life" opacity={20} />
                             <p className="md:text-lg">
-                                Nii Okai Ernest Nii-Okai Okai is a Ghanaian contemporary gospel singer and a choir leader. Nii Okai had his Secondary School education at Mfantsipim School in Cape Coast, Central Region of Ghana, and furthered at the Kwame Nkrumah University of Science and Technology. He currently holds an MA in Mission and Theology.
+                                Ps Nii is an apostle by function, has his roots in the Methodist church and pastors the International House of Virtue (iChurch) based in Tema. He is into school evangelism, Christian charity, church planting, teaching, music directing, worship leading, creative directing, counseling, event management, media and worship arts development both locally and globally.
 
-                                Nii Okai in mid-2010 set up &apos;Nii Okai Ministries&apos;, a team of vagrant music missionaries based in Tema, Ghana.
                             </p>
                         </div>
                         <div className="relative aspect-[16/12] my-auto  mx-auto w-full lg:w-[85%]">
