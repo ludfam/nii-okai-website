@@ -6,7 +6,7 @@ import { Toaster } from '@/components/ui/toaster'
 
 
 export const metadata: Metadata = {
-  title: `Home | ${APP_NAME}`,
+  title: `${APP_NAME}`,
   description: `From the gospel artist ${APP_NAME} comes a heartfelt guide full of spirit, music, and faith `,
 }
 
