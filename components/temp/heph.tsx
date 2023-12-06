@@ -13,7 +13,6 @@ const Soon = () => {
         minutes: "0",
         seconds: "0"
     })
-    const [buyTicketModal, setBuyTicketModal] = React.useState(false)
 
 
     const formatTimeValue = (value: number) => {

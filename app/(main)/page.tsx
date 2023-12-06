@@ -9,7 +9,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className="">
-      <section className="w-full h-screen overflow-y- bg-transparent">
+      <section className="w-full h-max overflow-y- bg-transparent">
         <NewCarousel />
       </section>
       <section className="min-h-screen flex flex-col py-12  w-full gradient1">
@@ -54,7 +54,7 @@ export default function Home() {
           <div className="w-full  grid lg:grid-cols-2 gap-8">
             <div className="flex flex-col justify-center gap-4">
               <p className="uppercase  text-3xl md:text-5xl font-extrabold">
-                Moko be
+                Revealing Jesus
               </p>
               <p className=" text-base md:text-lg font-bold italic">
                 Passing on Faith to the Next Generation
@@ -65,7 +65,7 @@ export default function Home() {
                 Nii Okai has 5 albums to his credit. &apos;Moko Be&apos;, &apos;Hymnz Unlimited&apos;, &apos;Worshipful&apos;, &apos;Saving Hearts&apos; and &apos;Holy writings&apos; which he received an award with the &apos;Saving Hearts&apos; album at the 16th edition of Vodafone Ghana Music Awards for Music for Development Award.
               </p>
               <div className="flex flex-col gap-4 mt-4">
-              
+
 
                 <Button className="uppercase md:w-max bg-o-lightblue hover:bg-o-darkblue" size="lg">
                   Buy / Stream
