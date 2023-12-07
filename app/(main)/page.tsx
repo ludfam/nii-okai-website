@@ -10,7 +10,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className="">
-      <section className="w-full h-max overflow-y- bg-transparent">
+      <section className="w-full h-max overflow-hidden bg-transparent">
         {/* <NewCarousel /> */}
         <Soon />
       </section>
