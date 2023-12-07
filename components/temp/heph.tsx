@@ -88,7 +88,7 @@ const Soon = () => {
 
                 <div className="mt-6 flex text-2xl text-white items-center justify-center gap-x-6">
                     {/* put the ions above in anchor tags wth links */}
-                    <a target='_blank' href="https://wa.me/233246156915?text=Hello, I want to make enquiries on  where to buy MOKOBE at 23 tickets. My name is "><AiOutlineWhatsApp className="cursor-pointer hover:text-green-600" /></a>
+                    <a target='_blank' href="https://wa.me/233246156915?text=Hello, I want to make enquiries about the Hephzibah! 2024. My name is "><AiOutlineWhatsApp className="cursor-pointer hover:text-green-600" /></a>
                     <a target='_blank' href="https://www.facebook.com/people/NII-OKAI/100050588345055"><BiLogoFacebook className="cursor-pointer hover:text-blue-600" /></a>
                     <a target='_blank' href="https://www.instagram.com/"><AiOutlineInstagram className="cursor-pointer hover:text-yellow-600" /></a>
                     <a target='_blank' href="https://twitter.com/AtaaNiiOkai"><FiTwitter className="cursor-pointer hover:text-blue-300" /></a>
