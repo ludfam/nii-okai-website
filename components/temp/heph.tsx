@@ -53,7 +53,7 @@ const Soon = () => {
     }
 
     return (
-        <div className="relative h-screen w-screen overflow-hidden flex items-center justify-center bg-cover bg-center text-center px-5 bg-[url(/images/heph.png)]">
+        <div className="relative h-[90vh] w-screen overflow-hidden flex items-center justify-center bg-cover bg-center text-center px-5 bg-[url(/images/heph.png)]">
             <div className="absolute top-0 right-0 bottom-0 left-0 bg-gray-900 opacity-75"></div>
 
             <div className="z-50 flex flex-col gap-y-5 justify-center text-white w-screen h-screen">
@@ -97,8 +97,10 @@ const Soon = () => {
 
                 {/* Reserve spot buttons */}
                 <div className="flex flex-row gap-x-5 justify-center items-center">
-                    <Link href="https://www.ludfamultimedia.com/hephzibah">
-                        <button className="bg-white text-black px-4 py-2 rounded-md hover:bg-gray-200">Stream Now</button>
+                    <Link href="https://www.ludfamultimedia.com/hephzibah?modal=true">
+                        <button className="bg-white text-black px-4 py-2 rounded-md hover:bg-gray-200">
+                            Register Now
+                        </button>
                     </Link>
                 </div>
 

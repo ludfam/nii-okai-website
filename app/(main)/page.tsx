@@ -3,6 +3,7 @@ import InstagramExcerpt from "@/components/excerpts/instagram-excerpt";
 import NewsExcerpt from "@/components/excerpts/news-excerpt";
 import NewsletterForm from "@/components/forms/newsletter-form";
 import Heading from "@/components/hierarchy/heading";
+import Soon from "@/components/temp/heph";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 
@@ -10,7 +11,8 @@ export default function Home() {
   return (
     <main className="">
       <section className="w-full h-max overflow-y- bg-transparent">
-        <NewCarousel />
+        {/* <NewCarousel /> */}
+        <Soon />
       </section>
       <section className="min-h-screen flex flex-col py-12  w-full gradient1">
         <div className="w-full flex flex-col gap-16  items-center justify-center container">
