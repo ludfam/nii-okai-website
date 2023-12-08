@@ -53,40 +53,39 @@ const Soon = () => {
     }
 
     return (
-        <div className="relative h-[90vh] w-screen overflow-hidden flex items-center justify-center bg-cover bg-center text-center px-5 bg-[url(/images/heph.png)]">
-            <div className="absolute top-0 right-0 bottom-0 left-0 bg-gray-900 opacity-75"></div>
+        <div className="relative h-[70vh] md:h-[90vh] w-screen overflow-hidden flex items-center justify-center bg-contain md:bg-cover bg-no-repeat bg-top  md:bg-bottom text-center px-5 bg-[url(/images/heph.png)]">
+            <div className="absolute top-0 right-0 bottom-0 left-0 opacity-50"></div>
 
-            <div className="z-50 flex flex-col gap-y-5 justify-center text-white w-screen h-screen">
-                <h1 className="text-3xl md:text-5xl">We are <b>Almost</b> there!</h1>
-                <p>Stay tuned for something amazing!!!</p>
+            <div className="z-50 flex mb-20 md:mb-10 flex-col gap-y-5 justify-end text-black w-screen h-[70vh] md:h-[90vh] px-5">
+                
 
                 <div className="px-5">
                     {/* countdown */}
-                    <div className="flex justify-center items-center gap-x-4 text-4xl text-white">
+                    <div className="flex justify-center items-center gap-x-4 text:lg md:text-4xl text-">
                         <div className="flex flex-col items-center justify-center">
-                            <span className="text-5xl md:text-6xl font-bold">{time.days}</span>
+                            <span className="text-3xl md:text-6xl font-bold">{time.days}</span>
                             <span className="text-sm">Days</span>
                         </div>
-                        <span className="text-5xl md:text-6xl font-bold">:</span>
+                        <span className="text-3xl md:text-6xl font-bold">:</span>
                         <div className="flex flex-col items-center justify-center">
-                            <span className="text-5xl md:text-6xl font-bold">{time.hours}</span>
+                            <span className="text-3xl md:text-6xl font-bold">{time.hours}</span>
                             <span className="text-sm">Hours</span>
                         </div>
-                        <span className="text-5xl md:text-6xl font-bold">:</span>
+                        <span className="text-3xl md:text-6xl font-bold">:</span>
                         <div className="flex flex-col items-center justify-center">
-                            <span className="text-5xl md:text-6xl font-bold">{time.minutes}</span>
+                            <span className="text-3xl md:text-6xl font-bold">{time.minutes}</span>
                             <span className="text-sm">Minutes</span>
                         </div>
-                        <span className="text-5xl md:text-6xl font-bold">:</span>
+                        <span className="text-3xl md:text-6xl font-bold">:</span>
                         <div className="flex flex-col items-center justify-center">
-                            <span className="text-5xl md:text-6xl font-bold">{time.seconds}</span>
+                            <span className="text-3xl md:text-6xl font-bold">{time.seconds}</span>
                             <span className="text-sm">Seconds</span>
                         </div>
                     </div>
 
                 </div>
 
-                <div className="mt-6 flex text-2xl text-white items-center justify-center gap-x-6">
+                <div className="mt-6 flex ttext-2xl text-black items-center justify-center gap-x-6">
                     {/* put the ions above in anchor tags wth links */}
                     <a target='_blank' href="https://wa.me/233246156915?text=Hello, I want to make enquiries about the Hephzibah! 2024. My name is "><AiOutlineWhatsApp className="cursor-pointer hover:text-green-600" /></a>
                     <a target='_blank' href="https://www.facebook.com/people/NII-OKAI/100050588345055"><BiLogoFacebook className="cursor-pointer hover:text-blue-600" /></a>
@@ -98,7 +97,7 @@ const Soon = () => {
                 {/* Reserve spot buttons */}
                 <div className="flex flex-row gap-x-5 justify-center items-center">
                     <Link href="https://www.ludfamultimedia.com/hephzibah?modal=true">
-                        <button className="bg-white text-black px-4 py-2 rounded-md hover:bg-gray-200">
+                        <button className="bg-o-lightblue text-white  px-4 py-2 rounded-md ">
                             Register Now
                         </button>
                     </Link>
