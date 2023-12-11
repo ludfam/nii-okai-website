@@ -76,7 +76,7 @@ export const links = [
 
 export default function MobileNav() {
     return (
-        <div className="md:hidden py-3">
+        <div className="lg:hidden py-3">
             <Sheet>
                 <SheetTrigger asChild>
                     <Button size="icon" variant="ghost">
