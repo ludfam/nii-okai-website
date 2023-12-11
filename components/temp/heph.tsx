@@ -56,7 +56,7 @@ const Soon = () => {
         <div className="relative h-[70vh] md:h-[90vh] w-screen overflow-hidden flex items-center justify-center bg-contain md:bg-cover bg-no-repeat bg-top  md:bg-bottom text-center px-5 bg-[url(/images/heph.png)]">
             <div className="absolute top-0 right-0 bottom-0 left-0 opacity-50"></div>
 
-            <div className="z-50 flex mb-20 md:mb-10 flex-col gap-y-5 justify-end text-black w-screen h-[70vh] md:h-[90vh] px-5">
+            <div className="z-50 flex mb-20 md:mb-10 flex-col gap-y-5 justify-end text-[#2766B0] w-screen h-[70vh] md:h-[90vh] px-5">
                 
 
                 <div className="px-5">
@@ -85,7 +85,7 @@ const Soon = () => {
 
                 </div>
 
-                <div className="mt-6 flex ttext-2xl text-black items-center justify-center gap-x-6">
+                <div className="mt flex text-2xl text-black items-center justify-center gap-x-6">
                     {/* put the ions above in anchor tags wth links */}
                     <a target='_blank' href="https://wa.me/233246156915?text=Hello, I want to make enquiries about the Hephzibah! 2024. My name is "><AiOutlineWhatsApp className="cursor-pointer hover:text-green-600" /></a>
                     <a target='_blank' href="https://www.facebook.com/people/NII-OKAI/100050588345055"><BiLogoFacebook className="cursor-pointer hover:text-blue-600" /></a>

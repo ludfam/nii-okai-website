@@ -30,7 +30,7 @@ export default function MainNav() {
         return pathname === href 
     }
     return (
-        <NavigationMenu className="hidden md:flex ">
+        <NavigationMenu className="hidden lg:flex ">
             <NavigationMenuList>
                 {
                     links.map((link) => (
