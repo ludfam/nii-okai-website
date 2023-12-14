@@ -13,3 +13,8 @@ export type NewsPost = {
     img: string
     link: string
 }
+
+export type Embed = {
+    embedLink?: string
+    title?: string
+}
