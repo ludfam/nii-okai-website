@@ -37,7 +37,8 @@ export default function NewsletterForm() {
 
     function onSubmit(values: z.infer<typeof formSchema>) {
         toast({
-            description: "You have subscribed to our newsletter"
+            title: `Hello ${values.email}`,
+            description: "This feature is not available yet"
           })
     }
 

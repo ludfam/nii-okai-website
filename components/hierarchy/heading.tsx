@@ -4,9 +4,10 @@ interface HeadingProps {
     title: string
     color?: "white" | "black"
     opacity?: number
+    top?: boolean
 }
 
-export default function Heading({ title, color, opacity }: HeadingProps) {
+export default function Heading({ title, color, opacity, top }: HeadingProps) {
     const textOpacity = ``
     return (
         <div className="relative w-max flex items-center justify-center">
@@ -22,8 +23,9 @@ export default function Heading({ title, color, opacity }: HeadingProps) {
                 {title}
             </p>
             <p className={cn(
-                "allexis absolute text-5xl lg:text-8xl translate-y-[50%] top-0 mx-auto",
-                color === "white" ? "text-white" : "text-black"
+                "allexis absolute text-5xl lg:text-8xl translate-y-[40%] top-0 mx-auto",
+                color === "white" ? "text-white" : "text-black",
+                top && "-translate-y-[0%]"
             )}>
                 {title}
             </p>
