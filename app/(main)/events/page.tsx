@@ -52,8 +52,8 @@ export default function EventsPage() {
                 <div className="w-full flex flex-col gap-16  items-center justify-center container">
                     <div className="w-full grid lg:grid-cols-2 gap-8 ">
                         <div className="flex items-center lg:justify-end max-lg:justify-center ">
-                            <div className=" relative  aspect-video   w-[95%] md:w-[500px] drop-shadow-lg bg-transparent">
-                                <Image src="/images/christmas.avif" className="object-cover" alt="book cover" fill />
+                            <div className=" relative  aspect-square   w-[95%] md:w-[500px] drop-shadow-lg bg-transparent">
+                                <Image src="/images/end-year.jpeg" className="object-cover" alt="book cover" fill />
                             </div>
                         </div>
                         <div className="flex flex-col justify-center gap-4">
@@ -66,7 +66,7 @@ export default function EventsPage() {
                                 </svg>
 
                                 <span>
-                                        December 24th to December 31st
+                                December 29th to December 31st 
                                 </span>
 
                             </p>

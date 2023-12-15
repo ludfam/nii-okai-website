@@ -29,8 +29,8 @@ export const dummyNews: NewsPost[] = [
     },
     {
         _id: "2",
-        title: "Christmas with Nii Okai",
-        img: "/images/christmas.avif",
+        title: "End of Year Power Weekend",
+        img: "/images/end-year.jpeg",
         link: "/events",
     },
     {

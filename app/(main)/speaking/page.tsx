@@ -37,12 +37,10 @@ export default function SpeakingPage() {
 
             </section>
             <section style={{
-                backgroundImage: `url("/images/skyline.jpg")`,
+                backgroundImage: `url("/images/speaking2.jpeg")`,
                 backgroundRepeat: "no-repeat",
-                backgroundAttachment: "local",
-                backgroundColor: "#1C1A18",
-            }} className=" w-full bg-top text-white bg-cover justify-center ">
-                <div className="bg-black/40 w-full min-h-[50vh] py-10 flex flex-col gap-6  items-center ">
+            }} className=" w-full bg-center text-white bg-cover justify-center bg-black ">
+                <div className="bg-black/60 w-full min-h-[50vh] py-10 flex flex-col gap-6  items-center ">
                     <section className="container w-full grid lg:grid-cols-3 gap-y-8">
                         <div className="flex flex-col gap-4 justify-center col-span-2 md:pt-12 mb-2">
                             <Heading color="white" title="Pastor" opacity={20} top />

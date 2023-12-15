@@ -17,10 +17,10 @@ export default function MusicPage() {
             >
                 <div className="absolute h-full text-center text-white w-full flex items-center flex-col justify-center top-0 bg-black/60">
                     <h1 className="uppercase font-bold text-4xl md:text-6xl 2xl:text-7xl">
-                        Nii Okai is back
+                        Nii Okai&apos;s Music
                     </h1>
                     <p className="uppercase  md:text-xl">
-                        Working on new music!
+                        {/* Working on new music! */}
                     </p>
                 </div>
             </div>
@@ -65,8 +65,13 @@ export default function MusicPage() {
             <section className="min-h-screen flex flex-col items-center justify-center gap-8 py-8 gradient1">
                 <Heading title="Videos" color="white" />
                 <div className="pb-8" />
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 w-full container">
                 <YoutubeEmbed embedLink="https://www.youtube.com/embed/DDFZ0WnnV7Q?si=hN0YIjkrdbTdGUSY" />
-                <Link href="https://www.youtube.com/@NiiOkaiTV">
+                <YoutubeEmbed embedLink="https://www.youtube.com/embed/P3TY7kuihmE?si=l6lZEoTybnO9HIIg" />
+                <YoutubeEmbed embedLink="https://www.youtube.com/embed/h5bEshx_x40?si=Q_dJsvVrBA0N3iKH" />
+
+                </div>
+                <Link href="https://www.youtube.com/@NiiOkaiTV/videos">
                     <Button variant="secondary" className="px-8">
                         See More
                     </Button>

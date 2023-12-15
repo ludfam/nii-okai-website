@@ -17,4 +17,7 @@ export type NewsPost = {
 export type Embed = {
     embedLink?: string
     title?: string
+    size?: "sm" | "lg" | "md"
+    aspect?: "video" | "square"
 }
+

@@ -16,7 +16,7 @@ export default function Footer() {
                         All Rights Reserved
                     </p>
                     <p>
-                        Powered by <span className="text-white font-bold"> Ludfam Multimedia</span> 
+                        Powered by <span className="text-white font-bold"> Ludfamultimedia</span> 
                     </p>
                 </div>
                 <div className="flex items-center gap-4 ">
