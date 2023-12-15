@@ -1,7 +1,7 @@
 import { Embed } from "@/types"
 import { Youtube } from "lucide-react"
 
-export default function YoutubeEmbed({ embedLink, title }: Embed) {
+export default function YoutubeEmbed({ embedLink, title, size, aspect }: Embed) {
     if (!embedLink) {
         return (
             <article className="aspect-video  w-full max-w-4xl flex flex-col items-center justify-center rounded-lg bg-white/90 ">
