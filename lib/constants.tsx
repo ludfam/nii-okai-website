@@ -16,3 +16,10 @@ export const SOCIAL_ICON_MAP: any = {
     youtube: FaYoutube
 }
 
+export const CONTACT_DETAILS = {
+    email: "info@niiokai.com",
+    phone: {
+        main: "+233246156915"
+    }
+}
+

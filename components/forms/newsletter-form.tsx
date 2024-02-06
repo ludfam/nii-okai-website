@@ -15,7 +15,7 @@ import { Input } from "@/components/ui/input"
 import * as z from "zod"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
-import { toast } from "@/components/ui/use-toast"
+import { toast } from "sonner"
 
 const formSchema = z.object({
     email: z.string().email({
@@ -36,10 +36,9 @@ export default function NewsletterForm() {
     })
 
     function onSubmit(values: z.infer<typeof formSchema>) {
-        toast({
-            title: `Hello ${values.email}`,
+        toast.info(`Hello ${values.email}`, {
             description: "This feature is not available yet"
-          })
+        })
     }
 
 
