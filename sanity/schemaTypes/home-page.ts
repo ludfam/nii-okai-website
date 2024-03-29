@@ -76,7 +76,7 @@ export default defineType({
                     type: "image",
                     title: "Music Image"
                 },
-              
+
             ]
         }),
         defineField({
