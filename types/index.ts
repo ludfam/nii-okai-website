@@ -1,3 +1,5 @@
+import { SanityImageSource } from "@sanity/image-url/lib/types/types";
+
 export type Children = {
     children: React.ReactNode
 }
@@ -21,3 +23,37 @@ export type Embed = {
     aspect?: "video" | "square"
 }
 
+export type Book = {
+    bookImage: SanityImageSource;
+    bookSubtitle: string;
+    bookDescription: string;
+    bookTitle: string;
+}
+
+export type Music = {
+    musicTitle: string
+    musicSubtitle: string
+    musicDescription: string
+    musicImage: SanityImageSource
+}
+
+export type HomepageValues = {
+    book: Book
+    speaker: string
+    music: Music
+    title: string
+    homeSliderImages: SanityImageSource[];
+};
+
+export type Category = {
+    title: string
+    description: string
+};
+
+export type News = {
+    title: string
+    thumbnail: SanityImageSource
+    content: string
+    slug: string
+    categories?: Category[] | []
+}
