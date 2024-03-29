@@ -11,8 +11,8 @@ export default function Home() {
   return (
     <main className="">
       <section className="w-full h-max overflow-hidden bg-transparent">
-        {/* <NewCarousel /> */}
-        <Soon />
+        <NewCarousel />
+        {/* <Soon /> */}
       </section>
       <section className="min-h-screen flex flex-col py-12  w-full gradient1">
         <div className="w-full flex flex-col gap-16  items-center justify-center container">
