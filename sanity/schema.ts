@@ -8,9 +8,9 @@ import homePage from './schemaTypes/home-page';
 
 export const schema: { types: SchemaTypeDefinition[]; } = {
   types: [
-    post, 
-    author, 
-    category, 
+    // post, 
+    // author, 
+    // category, 
     blockContent, 
     homePage
   ],
