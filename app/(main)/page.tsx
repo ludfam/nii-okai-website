@@ -6,34 +6,45 @@ import Heading from "@/components/hierarchy/heading";
 import Soon from "@/components/temp/heph";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import { groq, SanityDocument } from "next-sanity";
+import { client } from "@/sanity/lib/client";
+// import { HOMEPAGE_QUERY } from "@/sanity/lib/queries";
+import SanityImage from "@/components/core/sanity-image";
+import { HomepageValues } from "@/types";
 
-export default function Home() {
+// export const dynamic = 'force-dynamic'
+
+const HOMEPAGE_QUERY = groq`*[_type == "homePage"][0]`
+
+export default async function Home() {
+  const data = await client.fetch<SanityDocument<HomepageValues>>(HOMEPAGE_QUERY);
+  const { book, homeSliderImages, music, speaker, } = data;
+  console.log(data);
   return (
     <main className="">
       <section className="w-full h-max overflow-hidden bg-transparent">
-        <NewCarousel />
-        {/* <Soon /> */}
+        <NewCarousel images={homeSliderImages} />
       </section>
       <section className="min-h-screen flex flex-col py-12  w-full gradient1">
         <div className="w-full flex flex-col gap-16  items-center justify-center container">
           <Heading color="white" title="Book" />
           <div className="w-full grid lg:grid-cols-2 gap-8 ">
             <div className="flex items-center lg:justify-end max-lg:justify-center ">
-              <div className=" relative h-[400px]   w-[90%] md:w-[400px] md:h-[600px] drop-shadow-lg bg-transparent">
+              <SanityImage image={book?.bookImage} className="relative h-[400px]   w-[90%] md:w-[400px] md:h-[600px] drop-shadow-lg bg-transparent" />
+              {/* <div className=" relative h-[400px]   w-[90%] md:w-[400px] md:h-[600px] drop-shadow-lg bg-transparent">
                 <Image src="/images/book_cover.jpeg" className="object-contain" alt="book cover" fill />
-              </div>
+              </div> */}
             </div>
             <div className="flex flex-col justify-center gap-4">
               <p className="uppercase text-white text-4xl md:text-5xl font-extrabold">
-                Yesu Hi
+                {book?.bookTitle}
               </p>
               <p className="text-white text-base md:text-lg font-bold italic">
-                Jesus is Good, Losing My Isaac
+                {book?.bookSubtitle}
               </p>
               <p className="text-white">
-                In this very insightful and thought provoking piece, Nii Okai grants the reader unusual access to aspects of his personal life that reveals more of the man than the Minister that many have come to know.
-                <br /> <br />
-                The authenticity of a man&apos;s walk with God and how it reflects in the quality of his decisions goes a long way to determine his effectiveness and longevity in ministry. It therefore goes without saying that this book is a MUST read for anyone who desires to move from being an average miniter to one who is sold out for God.
+                {book?.bookDescription}
+
               </p>
               <div className="flex flex-col gap-4 mt-4">
                 <Button variant="transparent-white" className="uppercase md:w-max" size="lg">
@@ -56,15 +67,15 @@ export default function Home() {
           <div className="w-full  grid lg:grid-cols-2 gap-8">
             <div className="flex flex-col justify-center gap-4">
               <p className="uppercase  text-3xl md:text-5xl font-extrabold">
-                Revealing Jesus
+                {music?.musicTitle }
               </p>
               <p className=" text-base md:text-lg font-bold italic">
-                Passing on Faith to the Next Generation
+                {music?.musicSubtitle}
+
               </p>
               <p className="font-light tracking-wide md:text-lg">
-                Nii Okai is the co-founder of &apos;Harbour City Mass Choir&apos; an inter-denominational music ministry based in Tema, Ghana with a clear purpose of impacting the youth through contemporary gospel music, school outreach programs, music ministry workshops as well as peer and social counseling.
-                <br />
-                Nii Okai has 5 albums to his credit. &apos;Moko Be&apos;, &apos;Hymnz Unlimited&apos;, &apos;Worshipful&apos;, &apos;Saving Hearts&apos; and &apos;Holy writings&apos; which he received an award with the &apos;Saving Hearts&apos; album at the 16th edition of Vodafone Ghana Music Awards for Music for Development Award.
+                {music?.musicDescription}
+
               </p>
               <div className="flex flex-col gap-4 mt-4">
 
@@ -79,7 +90,7 @@ export default function Home() {
               <div className="aspect-square w-full p-4 flex relative  justify-center  lg:h-[600px] drop-shadow-lg bg-[#305AA9]">
 
                 <div className=" relative w-full h-full bg-black/50">
-                  <Image src='/images/home-music-2.jpg' alt="music" fill className="object-cover object-[.55_.75] " />
+                  <SanityImage image={music?.musicImage} alt="music" className="object-cover object-[.55_.75] " />
                 </div>
               </div>
             </div>
@@ -107,7 +118,7 @@ export default function Home() {
 
             <Heading title="Speaker" color="white" />
             <p className="max-w-3xl md:text-lg mt-8 z-10">
-              Nii Okai is currently the leader of &apos;&apos;Harbour City Mass Choir&apos;&apos; (H.C.M.C.), an inter-denominational music ministry based in Tema, Ghana. He came to limelight when he released his first album &apos;&apos;Moko Be&apos;&apos;. An 8-track music album produced by one of the great multi-talented instrumentalists in Ghana, KODA with its hit songs; &apos;&apos;Woana Na&apos;&apos; and &apos;&apos;Moko Be&apos;&apos;. The album featured &apos;&apos;Danny Nettey&apos;&apos;, &apos;&apos;Nana Yaa Amihere&apos;&apos; among others.
+              {speaker}
             </p>
             <Button variant="transparent-white" className="uppercase md:w-max" size="lg">
               Buy Now
@@ -128,5 +139,5 @@ export default function Home() {
       <InstagramExcerpt />
 
     </main>
-  )
+  );
 }

@@ -3,6 +3,8 @@ import Navbar from "@/components/navigation/navbar";
 import SocialHeader from "@/components/navigation/social-header";
 import { Children } from "@/types";
 
+export const dynamic = 'force-dynamic'
+
 export default function MainLayout({ children }: Children) {
     return (
         <>

@@ -76,8 +76,14 @@ export default defineType({
                     type: "image",
                     title: "Music Image"
                 },
-              
+
             ]
+        }),
+        defineField({
+            name: 'speaker',
+            title: 'Speaker',
+            type: 'string',
+            description: "This field will contain the description for the speaker section of the home page",
         }),
     ],
 });
