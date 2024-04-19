@@ -45,6 +45,24 @@ export type HomepageValues = {
     homeSliderImages: SanityImageSource[];
 };
 
+export type AboutLife = {
+    description: string 
+    foreImage: SanityImageSource;
+    bgImage: SanityImageSource;
+}
+
+export type AboutAbout = {
+    description: string
+    image: SanityImageSource;
+    more: any
+}
+
+export type AboutPageValues = {
+    title: string
+    about: AboutAbout
+    life: AboutLife
+}
+
 export type Category = {
     title: string
     description: string
