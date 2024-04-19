@@ -13,6 +13,14 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Children) {
   return (
     <html lang="en">
+      <head>
+
+      <script
+        type="module"
+        defer
+        src="https://cdn.jsdelivr.net/npm/ldrs/dist/auto/helix.js"
+      ></script>
+      </head>
       <body className="">
         <Toaster />
         {children}
