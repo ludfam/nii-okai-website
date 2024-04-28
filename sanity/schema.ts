@@ -1,9 +1,10 @@
 import { type SchemaTypeDefinition } from 'sanity';
-import { HOMEPAGE, ABOUTPAGE, MUSICPAGE } from './schemaTypes';
+import { HOMEPAGE, ABOUTPAGE, MUSICPAGE, SPEAKINGPAGE } from './schemaTypes';
 import blockContent from './schemaTypes/blockContent';
 import category from './schemaTypes/category';
 import news from './schemaTypes/news';
 import longContent from './schemaTypes/longContent';
+import events from './schemaTypes/events';
 
 export const schema: { types: SchemaTypeDefinition[]; } = {
   types: [
@@ -13,6 +14,9 @@ export const schema: { types: SchemaTypeDefinition[]; } = {
     HOMEPAGE,
     ABOUTPAGE,
     MUSICPAGE,
+    SPEAKINGPAGE,
+
+    events,
 
     category, 
     news,

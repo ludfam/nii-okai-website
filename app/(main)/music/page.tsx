@@ -5,7 +5,7 @@ import Heading from "@/components/hierarchy/heading";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
-import { MUSICPAGE_QUERY } from "@/sanity/lib/queries";
+import { generatePageQuery} from "@/sanity/lib/queries";
 import DataFetchingLoader from "@/components/loaders/data-fetching-loader";
 import { SanityDocument } from "next-sanity";
 import { MusicPageValues } from "@/types";
@@ -14,7 +14,7 @@ import { urlFor } from "@/components/core/sanity-image";
 import SanityBlock from "@/components/core/sanity-block";
 
 export default async function MusicPage() {
-    const data = await client.fetch<SanityDocument<MusicPageValues>>(MUSICPAGE_QUERY);
+    const data = await client.fetch<SanityDocument<MusicPageValues>>(generatePageQuery("musicPage"));
     const heroImage = urlFor(data?.hero?.image);
 
 

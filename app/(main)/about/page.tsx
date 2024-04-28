@@ -4,7 +4,7 @@ import Image from "next/image";
 import CareerMore from "./career-more";
 import Heading from "@/components/hierarchy/heading";
 import NewsletterForm from "@/components/forms/newsletter-form";
-import { ABOUTPAGE_QUERY } from "@/sanity/lib/queries";
+import { generatePageQuery } from "@/sanity/lib/queries";
 import {  SanityDocument } from "next-sanity";
 import { client } from "@/sanity/lib/client";
 import { AboutPageValues } from "@/types";
@@ -12,7 +12,7 @@ import SanityImage, { urlFor } from "@/components/core/sanity-image";
 
 
 export default async function AboutPage() {
-    const data = await client.fetch<SanityDocument<AboutPageValues>>(ABOUTPAGE_QUERY);
+    const data = await client.fetch<SanityDocument<AboutPageValues>>(generatePageQuery("aboutPage"));
     const lifeBgImageBuilder = urlFor(data?.life?.bgImage)
 
     return (

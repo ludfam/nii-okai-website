@@ -15,7 +15,7 @@ export default defineType({
             name: 'hero',
             title: 'Hero',
             type: 'object',
-            description: "This field is for the information that will show at the hero section of the about page",
+            description: "This field is for the information that will show at the hero section of the music page",
             fields: [
                 {
                     name: "image",

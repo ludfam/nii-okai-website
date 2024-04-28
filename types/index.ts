@@ -125,13 +125,14 @@ export type SpeakingPageValues = {
     hero: SpeakingHero
     speaker: SpeakingSpeaker
     booking: SpeakingBooking
+    pastor: SpeakingPastor
 }
 
 export type Event = {
     title: string
     image: SanityImageSource
     start: any
-    end?: any
+    end: any
     link: string
     label: string
     description: any

@@ -3,20 +3,17 @@ import InstagramExcerpt from "@/components/excerpts/instagram-excerpt";
 import NewsExcerpt from "@/components/excerpts/news-excerpt";
 import NewsletterForm from "@/components/forms/newsletter-form";
 import Heading from "@/components/hierarchy/heading";
-import Soon from "@/components/temp/heph";
 import { Button } from "@/components/ui/button";
-import Image from "next/image";
-import { groq, SanityDocument } from "next-sanity";
+import {  SanityDocument } from "next-sanity";
 import { client } from "@/sanity/lib/client";
-import { HOMEPAGE_QUERY } from "@/sanity/lib/queries";
+import { generatePageQuery } from "@/sanity/lib/queries";
 import SanityImage from "@/components/core/sanity-image";
 import { HomepageValues } from "@/types";
 import DataFetchingLoader from "@/components/loaders/data-fetching-loader";
 
-// const HOMEPAGE_QUERY = groq`*[_type == "homePage"][0]`
 
 export default async function Home() {
-  const data = await client.fetch<SanityDocument<HomepageValues>>(HOMEPAGE_QUERY);
+  const data = await client.fetch<SanityDocument<HomepageValues>>(generatePageQuery("homePage"));
   const { book, homeSliderImages, music, speaker, } = data;
   console.log(data);
   
