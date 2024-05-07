@@ -12,7 +12,7 @@ export default function NotFound() {
                     >
                         Go back home
                     </a>
-                    <a href="/contact" className="text-sm font-semibold text-gray-900">
+                    <a href="/contact" className="text-sm font-semibold hover:border-gray-900 text-gray-900 border border-transparent rounded-md px-3.5 py-2.5">
                         Contact support <span aria-hidden="true">&rarr;</span>
                     </a>
                 </div>
