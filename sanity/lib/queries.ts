@@ -20,7 +20,7 @@ const pageQueryKeys = {
     "speakingPage": "speakingPage",
     "events": "eventsPage",
     "ichurchPage": "ichurchPage",
-    "newsPage": "newsPage",
+    "news": "newsPage",
 };
 
 type PageQueryKeysType = keyof typeof pageQueryKeys;

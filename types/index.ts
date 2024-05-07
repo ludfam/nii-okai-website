@@ -1,5 +1,5 @@
 import { SanityImageSource } from "@sanity/image-url/lib/types/types";
-import { StringSegmentUnchanged } from "sanity";
+
 
 export type Children = {
     children: React.ReactNode
@@ -72,9 +72,10 @@ export type Category = {
 export type News = {
     title: string
     thumbnail: SanityImageSource
-    content: string
-    slug: string
+    summary: string
+    slug: any
     categories?: Category[] | []
+    content: any
 };
 
 export type FeaturedMusic = {

@@ -10,19 +10,27 @@ export default defineType({
             title: 'Title',
             type: 'string',
         }),
+      
         defineField({
             name: 'slug',
             title: 'Slug',
             type: 'slug',
+            description: "This is the unique string that would reference this news post. It is advised to generate one for consistency. It will be generated from the title, so make sure you have a title before generating one",
             options: {
                 source: 'title',
                 maxLength: 96,
                 slugify: input => input
                     .toLowerCase()
                     .replace(/\s+/g, '-')
-                    .slice(0, 200)
-
+                    .slice(0, 200),
             },
+            
+        }),
+        defineField({
+            name: 'summary',
+            title: 'Summary',
+            description: "This is a short description of the news post. This is different from the blog post",
+            type: 'string',
         }),
         defineField({
             name: 'thumbnail',
@@ -44,16 +52,4 @@ export default defineType({
             type: 'blockContent',
         }),
     ],
-
-    preview: {
-        select: {
-            title: 'title',
-            author: 'author.name',
-            media: 'mainImage',
-        },
-        prepare(selection) {
-            const { author } = selection;
-            return { ...selection, subtitle: author && `by ${author}` };
-        },
-    },
 });

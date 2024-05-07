@@ -15,7 +15,6 @@ import DataFetchingLoader from "@/components/loaders/data-fetching-loader";
 export default async function Home() {
   const data = await client.fetch<SanityDocument<HomepageValues>>(generatePageQuery("homePage"));
   const { book, homeSliderImages, music, speaker, } = data;
-  console.log(data);
   
   return (
     <DataFetchingLoader data={data}>
