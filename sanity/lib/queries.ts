@@ -20,7 +20,7 @@ const pageQueryKeys = {
     "speakingPage": "speakingPage",
     "events": "eventsPage",
     "ichurchPage": "ichurchPage",
-    "newsPage": "newsPage",
+    "news": "newsPage",
 };
 
 type PageQueryKeysType = keyof typeof pageQueryKeys;
@@ -53,4 +53,8 @@ export function generatePageQuery(page: PageQueryKeysType, sortField?: string, s
     
 
     return groq`*[_type == "${page}"] | order(${field} ${order})${idx}`;
+}
+
+export function generateNewsQuery(slug: string) {
+    return groq`*[_type == 'news' && slug.current == '${slug}'][0]`
 }

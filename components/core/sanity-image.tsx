@@ -36,8 +36,21 @@ export default function SanityImage({ image, alt, className, fit = "cover", uses
                     <>
                         {
                             usesImg ?
-                                <img className={className as string} src={convertedImage} alt={alt ?? ""} /> :
-                                <Image src={convertedImage} alt={alt ?? ""} fill className={cn(fit === "contain" ? "object-contain" : "object-cover")} />
+                                // eslint-disable-next-line
+                                <img
+                                    className={cn(
+                                        className as string,
+                                        (fit === "contain" ? "object-contain" : "object-cover")
+                                    )}
+                                    src={convertedImage}
+                                    alt={alt ?? ""}
+                                /> :
+                                <Image
+                                    src={convertedImage} alt={alt ?? ""}
+                                    fill
+                                    className={cn(
+                                        fit === "contain" ? "object-contain" : "object-cover"
+                                    )} />
                         }
                     </>
                 ) : (
