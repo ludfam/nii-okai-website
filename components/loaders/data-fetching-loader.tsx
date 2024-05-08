@@ -4,13 +4,15 @@ import 'ldrs/helix';
 import type { } from 'ldrs';
 import { Button } from '../ui/button';
 import { useRouter } from 'next/navigation';
+import CustomEmpty from '../core/custom-empty';
 
 type Props = {
     data: any
     children: React.ReactNode
+    dataType?: string
 }
 
-export default function DataFetchingLoader({data, children}: Props) {
+export default function DataFetchingLoader({data, children, dataType}: Props) {
     const [isClient, setIsClient] = useState(false);
     const [message, setMessage] = useState("");
     const [showButton, setShowButton] = useState(false);
@@ -40,8 +42,16 @@ export default function DataFetchingLoader({data, children}: Props) {
 
     if (!isClient) {
         return (
-            <div className=""></div>
+            <div className="min-h-[70vh]"></div>
         );
+    }
+
+    if (!!!data) {
+        return (
+            <section className='w-full min-h-[90vh] flex items-center justify-center'>
+                <CustomEmpty message={dataType} />
+            </section>
+        )
     }
 
     return (
