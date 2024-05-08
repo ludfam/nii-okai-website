@@ -1,6 +1,4 @@
 import { generateNewsQuery } from "@/sanity/lib/queries";
-import Link from "next/link";
-import { Button } from "@/components/ui/button";
 import { SanityDocument } from "next-sanity";
 import { client } from "@/sanity/lib/client";
 import SanityImage from "@/components/core/sanity-image";
@@ -15,7 +13,7 @@ export default async function SingleNewsPage({ params }: { params: { slug: strin
 
     return (
         <DataFetchingLoader data={data}>
-            <section className="container w-full flex flex-col gap-4">
+            <section className="container w-full flex flex-col gap-4 pb-4">
                 <SanityImage usesImg alt="thumbnail" className=" w-full aspect-[5/2]" fit="cover" image={data?.thumbnail} />
                 <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl text-center ">{data?.title || ""}</h1>
                 <div>
