@@ -1,9 +1,6 @@
-import Link from "next/link";
-import { Button } from "@/components/ui/button";
 import { SanityDocument } from "next-sanity";
 import { client } from "@/sanity/lib/client";
 import { generatePageQuery } from "@/sanity/lib/queries";
-import SanityImage from "@/components/core/sanity-image";
 import { News } from "@/types";
 import NewsCard from "@/components/cards/news-card";
 
