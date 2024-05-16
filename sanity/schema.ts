@@ -1,5 +1,5 @@
 import { type SchemaTypeDefinition } from 'sanity';
-import { HOMEPAGE, ABOUTPAGE, MUSICPAGE, SPEAKINGPAGE } from './schemaTypes';
+import { HOMEPAGE, ABOUTPAGE, MUSICPAGE, SPEAKINGPAGE, ICHURCHPAGE } from './schemaTypes';
 import blockContent from './schemaTypes/blockContent';
 import category from './schemaTypes/category';
 import news from './schemaTypes/news';
@@ -15,6 +15,7 @@ export const schema: { types: SchemaTypeDefinition[]; } = {
     ABOUTPAGE,
     MUSICPAGE,
     SPEAKINGPAGE,
+    ICHURCHPAGE,
 
     events,
 

@@ -139,3 +139,31 @@ export type Event = {
     description: any
 }
 
+export type ChurchAbout = {
+    subtitle: string
+    description: any
+    image: SanityImageSource;
+}
+
+export type ChurchMeeting = {
+    title: string
+    description: string
+    time: string
+}
+
+export type ChurchJoin = {
+    foreImage: SanityImageSource;
+    backImage: SanityImageSource;
+}
+
+export type ChurchPageValues = {
+    title: string
+    heroImage: SanityImageSource
+    about: ChurchAbout
+    join: ChurchJoin;
+    meeting1: ChurchMeeting
+    meeting2?: ChurchMeeting
+    videoLink1: string;
+    videoLink2: string;
+    videoLink3: string;
+}
