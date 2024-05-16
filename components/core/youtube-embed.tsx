@@ -4,7 +4,7 @@ import { Youtube } from "lucide-react"
 export default function YoutubeEmbed({ embedLink, title, size, aspect }: Embed) {
     if (!embedLink) {
         return (
-            <article className="aspect-video  w-full max-w-4xl flex flex-col items-center justify-center rounded-lg bg-white/90 ">
+            <article className="aspect-video  w-full max-w-4xl flex flex-col items-center justify-center rounded-lg bg-white/50 ">
                     
                 <Youtube className="w-12 h-12 text-neutral-500 " />
                 <p className="text-center ">
